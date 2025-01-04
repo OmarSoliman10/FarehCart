@@ -6,7 +6,7 @@ import Home from "./components/Home/Home";
 import Products from './components/Products/Products';
 import Cart from './components/Cart/Cart';
 import Categories from './components/Categories/Categories';
-import NotFound from './components/NotFound/NotFound';
+// import NotFound from './components/NotFound/NotFound';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Brands from './components/Brands/Brands';
@@ -31,7 +31,7 @@ function App() {
         {path :"productsdetails/:id" , element: <ProtectedRoute><ProductsDetails /></ProtectedRoute> },
         {path :"login" , element:<Login />  }, 
         {path :"register" , element:<Register /> },
-        {path :"*" , element:  <NotFound />},
+        {path :"*" , element:  <Login />},
 
       ],
     },
